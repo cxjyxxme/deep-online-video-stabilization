@@ -22,7 +22,7 @@ parser.add_argument('--test-list', nargs='+', default=['data_video/test_list', '
 parser.add_argument('--prefix', default='data_video')
 parser.add_argument('--max-span', type=int, default=1)
 parser.add_argument('--random-black', type=int, default=None)
-parser.add_argument('--indices', type=int, nargs='+', required=True)
+#parser.add_argument('--indices', type=int, nargs='+', required=True)
 parser.add_argument('--start-with-stable', action='store_true')
 parser.add_argument('--refine', type=int, default=1)
 parser.add_argument('--no_bm', type=int, default=1)

@@ -1,4 +1,4 @@
-from configs.v2_72 import *
+from configs.v2_93 import *
 import cv2
 from PIL import Image
 import numpy as np
