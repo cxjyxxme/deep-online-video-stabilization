@@ -1,5 +1,5 @@
-# Deep Online Video Stabilization
-https://arxiv.org/pdf/1802.08091.pdf
+# Deep Online Video Stabilization with Multi-Grid Warping Transformation Learning
+https://ieeexplore.ieee.org/document/8554287
 
 ## Prerequisites
 - Linux
@@ -11,9 +11,14 @@ https://arxiv.org/pdf/1802.08091.pdf
 
 ## Getting Started
 ### Installation
+download data.zip at https://cg.cs.tsinghua.edu.cn/people/~miao/stabnet/data.zip
 ```bash
-cd deep-online-video-stabilization
-cp xxx models/v2_93
+unzip data.zip
+mv data/models deep-online-video-stabilization/
+mv data/datas deep-online-video-stabilization/
+mv data/data deep-online-video-stabilization/
+cd deep-online-video-stabilization-deploy
+mkdir output
 ```
 
 ### Testing
@@ -25,3 +30,23 @@ python3 -u deploy_bundle.py --model-dir ./models/v2_93/ --model-name model-80000
 ```bash
 python -u train_bundle_nobm.py
 ```
+### Dataset
+DeepStab dataset (7.9GB)
+    http://cg.cs.tsinghua.edu.cn/download/DeepStab.zip
+
+## Citation
+
+    If you find this useful for your research, please cite the following paper.
+
+    ```
+    @ARTICLE{StabNet, 
+        author={M. Wang and G. Yang and J. Lin and S. Zhang and A. Shamir and S. Lu and S. Hu}, 
+        journal={IEEE Transactions on Image Processing}, 
+        title={Deep Online Video Stabilization with Multi-Grid Warping Transformation Learning}, 
+        year={2018}, 
+        volume={}, 
+        number={}, 
+        pages={1-1}, 
+    }
+```
+

@@ -151,3 +151,5 @@ models/
 output/
 data_video/
 *.pyc
+data/
+datas/
