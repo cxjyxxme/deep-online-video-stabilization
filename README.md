@@ -11,7 +11,8 @@ https://ieeexplore.ieee.org/document/8554287
 
 ## Getting Started
 ### Installation
-download data.zip at https://cg.cs.tsinghua.edu.cn/people/~miao/stabnet/data.zip
+Download data.zip at https://cg.cs.tsinghua.edu.cn/people/~miao/stabnet/data.zip
+This dataset does not contain flow information(set to 0). If you need to use data containing flow information, you can use the TVL1 algorithm to generate it.
 ```bash
 unzip data.zip
 mv data/models deep-online-video-stabilization/
